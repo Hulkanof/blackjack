@@ -1,9 +1,9 @@
 package entities;
 
-public class hand {
+public class Hand {
     private String[] cards;
 
-    public hand(String[] cards) {
+    public Hand(String[] cards) {
         this.cards = cards;
     }
 

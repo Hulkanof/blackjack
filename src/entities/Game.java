@@ -1,6 +1,6 @@
 package entities;
 
-public class game {
+public class Game {
 
     private int count;
 
@@ -8,19 +8,19 @@ public class game {
 
     private int true_count;
 
-    private hand player_hand;
+    private Hand player_hand;
 
-    private hand dealer_hand;
+    private Hand dealer_hand;
 
-    public game() {
+    public Game() {
         this.count = 0;
         this.count_cards = 0;
         this.true_count = 0;
-        this.player_hand = new hand(new String[] {});
-        this.dealer_hand = new hand(new String[] {});
+        this.player_hand = new Hand(new String[] {});
+        this.dealer_hand = new Hand(new String[] {});
     }
 
-    public game(int count, int count_cards, int true_count, hand player_hand, hand dealer_hand) {
+    public Game(int count, int count_cards, int true_count, Hand player_hand, Hand dealer_hand) {
         this.count = count;
         this.count_cards = count_cards;
         this.true_count = true_count;
@@ -52,19 +52,19 @@ public class game {
         this.true_count = true_count;
     }
 
-    public hand getPlayer_hand() {
+    public Hand getPlayer_hand() {
         return this.player_hand;
     }
 
-    public void setPlayer_hand(hand player_hand) {
+    public void setPlayer_hand(Hand player_hand) {
         this.player_hand = player_hand;
     }
 
-    public hand getDealer_hand() {
+    public Hand getDealer_hand() {
         return this.dealer_hand;
     }
 
-    public void setDealer_hand(hand dealer_hand) {
+    public void setDealer_hand(Hand dealer_hand) {
         this.dealer_hand = dealer_hand;
     }
     public String strategy(){
